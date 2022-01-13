@@ -8,3 +8,5 @@ use Cecez\GenderizeWrapper;
 GenderizeWrapper::getGender('Cezar'); // retorna GENDER_MALE, GENDER_FEMALE ou GENDER_UNKNOWN;
 
 ```
+
+https://api.genderize.io/?name=cezar
