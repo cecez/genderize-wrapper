@@ -1,0 +1,21 @@
+{
+  "name": "cecez/genderize-wrapper",
+  "description": "Pacote/projeto para informar se um dado nome é masculino/feminino/desconhecido.",
+  "license": "MIT",
+  "keywords": ["PHP", "gênero", "nome", "genderize.io"],
+  "autoload": {
+    "psr-4": {
+      "Cecez\\GenderizeWrapper\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Cezar Castro Rosa",
+      "email": "cecez86@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  }
+}
