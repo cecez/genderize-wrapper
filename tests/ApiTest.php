@@ -22,7 +22,7 @@ class ApiTest extends TestCase
         // arrange
 
         // act
-        $retorno = Cecez\GenderizeWrapper\Api::getGender('Ana Paula');
+        $retorno = Cecez\GenderizeWrapper\Api::getGender('Ana');
 
         // assert
         self::assertEquals(Cecez\GenderizeWrapper\Gender::FEMININE, $retorno);
