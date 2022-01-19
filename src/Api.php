@@ -9,10 +9,10 @@ class Api
      */
     public static function getGender(string $name): Gender
     {
-        // validar chamada
-
-        // montar requisição para API
-        $url = "https://api.genderize.io?name=" . urlencode($name);
+        $objeto = new Processadora($name);
+        $objeto->sanitiza();
+        $objeto->valida();
+        $url = $objeto->urlDaRequisicao();
 
         // enviar requisição
         $retornoJSON = file_get_contents($url);
