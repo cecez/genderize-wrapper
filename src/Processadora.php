@@ -86,7 +86,7 @@ class Processadora
     public function processaResultado(): Gender
     {
         // processar resultado
-        if ($this->retornoDecodificado->probability <= 0.5) {
+        if ($this->retornoDecodificado->probability <= 0.6) {
             return Gender::UNKNOWN;
         }
 

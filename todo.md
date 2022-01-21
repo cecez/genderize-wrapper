@@ -1,0 +1,1 @@
+- [ ] exceção específica para quando limite de requisições for atingido (X-Rate-Limit-Remaining)
