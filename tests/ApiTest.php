@@ -27,4 +27,16 @@ class ApiTest extends TestCase
         // assert
         self::assertEquals(Cecez\GenderizeWrapper\Gender::FEMININE, $retorno);
     }
+
+    /** @test */
+    public function nome_desconhecido()
+    {
+        // arrange
+
+        // act
+        $retorno = Cecez\GenderizeWrapper\Api::getGender('Ainsley');
+
+        // assert
+        self::assertEquals(Cecez\GenderizeWrapper\Gender::UNKNOWN, $retorno);
+    }
 }
